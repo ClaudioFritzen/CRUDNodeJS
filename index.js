@@ -15,7 +15,7 @@ server.get('/cursos/:index', (req, res) => {
 });
 
 // Retornar todos os cursos
-server.get('/cursos', (req, rest) => {
+server.get('/cursos', (req, res) => {
     return res.json(cursos);
 })
 
@@ -52,3 +52,4 @@ server.delete('/cursos/:index', (req, res) => {
 
 
 server.listen(3000);
+console.log('Rodando server')
