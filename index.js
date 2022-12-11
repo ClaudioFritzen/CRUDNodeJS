@@ -21,10 +21,10 @@ server.get('/cursos', (req, res) => {
 
 // Criar um novo curso
 server.post('/cursos', (req, res) => {
-    const { name} = req.body;
+    const { name } = req.body;
     cursos.push(name);
 
-    return rs.json(cursos);
+    return res.json(cursos);
 });
 
 // atualizar um curso
