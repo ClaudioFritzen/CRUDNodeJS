@@ -44,12 +44,8 @@ server.delete('/cursos/:index', (req, res) => {
     cursos.splice(index, 1);
     return res.json({ message: " O curso foi deletado "})
 });
-
-
-
-
-
-
+ 
+// Todos funcionando utilizando o postman
 
 server.listen(3000);
 console.log('Rodando server')
